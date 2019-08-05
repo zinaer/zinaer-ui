@@ -2,7 +2,14 @@
   <button
     :id="id"
     :class="'zr-button' + (customClass ? ' ' + customClass + ' ' : '') + setClass([type, size, { plain, block, round, square, disabled, hairline, loading }])"
+    :form-type="formType"
+    :open-type="openType"
     hover-class="zr-button--active hover-class"
+    :hover-start-time="hoverStartTime"
+    :hover-stay-time="hoverStayTime"
+    @click="onClick"
+    @getphonenumber="getPhoneNumber"
+    @opensetting="openSetting"
   >
     <block v-if="loading">
       <zr-loading
@@ -62,9 +69,20 @@
       loadingSize: {
         type: String,
         default: '20px'
+      },
+      formType: String,
+      openType: String,
+      hoverStartTime: {
+        type: Number,
+        default: 20
+      },
+      hoverStayTime: {
+        type: Number,
+        default: 70
       }
     },
     methods: {
+      // 设置 class
       setClass(conf) {
         const PREFIX = 'zr-'
         
@@ -91,6 +109,24 @@
         }
 
         return classNames
+      },
+      // 点击事件
+      onClick() {
+        if (!this.disabled && !this.loading) {
+          this.$emit('click');
+        }
+      },
+      // 获取用户信息
+      getUserInfo(event) {
+        this.$emit('getphonenumber', event.detail)
+      },
+      // 获取用户手机号
+      getPhoneNumber(event) {
+        this.$emit('getphonenumber', event.detail)
+      },
+      // 打开客服会话
+      contact(event) {
+        this.$emit('contact', event.detail)
       }
     }
   }
