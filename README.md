@@ -50,7 +50,7 @@ git clone https://github.com/zinaer/zinaer-ui.git
 以按钮组件为例，只需要在 `script` 中引入按钮对应的自定义组件即可
 
 ```js
-import zrButton from '@/components/button/Index'
+import zrButton from 'path/to/zinaer-ui/dist/button/Index'
 
 export default {
   component: {
