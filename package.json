@@ -1,7 +1,9 @@
 {
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "rm -r docs/packages/* && cp -r packages/* docs/packages/ && rm -r docs/packages/*/*.vue && vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:deploy": "vuepress build docs && cd docs/.vuepress/dist && git init && git add -A && git commit -m 'deploy' && git push -f git@github.com:zinaer/zinaer-ui-docs.git master:gh-pages",
+    "build:dist": "rm -r dist/* && cp -r packages/* dist/ && rm -r dist/*/*.md"
   },
   "devDependencies": {
     "vuepress": "^1.0.3"
