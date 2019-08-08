@@ -1,6 +1,6 @@
 <template>
   <view
-    :class="(customClass ? customClass + ' ' : '') + 'zr-loading'"
+    class="zr-loading custom-class"
     :style="'width: ' + size + '; height: ' + size"
   >
     <view
@@ -9,7 +9,7 @@
     >
       <view
         v-if="type === 'spinner'"
-        v-for="item in 12"
+        v-for="(item, index) in 12"
         :key="index"
         class="zr-loading__dot"
       ></view>
@@ -57,10 +57,10 @@
       animation zr-rotate 0.8s linear infinite
   
       &--spinner
-        animation-timing-function: steps(12)
+        animation-timing-function steps(12)
   
       &--circular
-        border: 1px solid
+        border 1px solid
         border-radius 100%
         border-color transparent
         border-top-color currentColor
@@ -80,20 +80,18 @@
         margin 0 auto
         border-radius 40%
         background-color currentColor
-        
-  generate(n, i = 1) if i <= n
+
+  n = 1 2 3 4 5 6 7 8 9 10 11 12
+  
+  for i in n
     .zr-loading__dot:nth-of-type({i})
       opacity 1 - (0.75 / 12) * (i - 1)
       transform rotate(i * 30deg)
-
-    generate(n, (i + 1))
-
-  generate(12)
         
   @keyframes zr-rotate
     from
       transform rotate(0deg)
-
+      
     to
       transform rotate(360deg)
 

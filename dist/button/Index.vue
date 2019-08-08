@@ -1,7 +1,7 @@
 <template>
   <button
     :id="id"
-    :class="'zr-button' + (customClass ? ' ' + customClass + ' ' : '') + setClass([type, size, { plain, block, round, square, disabled, hairline, loading }])"
+    :class="'zr-button custom-class ' + setClass([type, size, { plain, block, round, square, disabled, hairline, loading }])"
     :form-type="formType"
     :open-type="openType"
     hover-class="zr-button--active hover-class"
@@ -47,16 +47,13 @@
         default: 'normal'
       },
       customClass: String,
-      // #ifdef H5
-      plain: String,
-      block: String,
-      round: String,
-      square: String,
-      disabled: String,
-      hairline: String,
-      loading: String,
-      // #endif
-      // #ifndef H5
+      // plain: false,
+      // block: false,
+      // round: false,
+      // square: false,
+      // disabled: false,
+      // hairline: false,
+      // loading: false,
       plain: Boolean,
       block: Boolean,
       round: Boolean,
@@ -64,7 +61,6 @@
       disabled: Boolean,
       hairline: Boolean,
       loading: Boolean,
-      // #endif
       loadingText: String,
       loadingSize: {
         type: String,

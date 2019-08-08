@@ -1,5 +1,5 @@
 <template>
-  <demo-section>
+  <view>
     <demo-block title="按钮类型" padding>
       <view class="row">
         <zr-button class="demo-margin-right">默认按钮</zr-button>
@@ -26,8 +26,8 @@
     </demo-block>
 
     <demo-block title="加载状态" padding>
-      <zr-button loading type="primary" class="demo-margin-right" />
-      <zr-button loading type="danger" loading-text="加载中..." />
+      <zr-button loading type="primary" class="demo-margin-right"></zr-button>
+      <zr-button loading type="danger" loading-text="加载中..."></zr-button>
     </demo-block>
 
     <demo-block title="按钮形状" padding>
@@ -41,13 +41,12 @@
       <zr-button size="small" class="demo-margin-right">小型按钮</zr-button>
       <zr-button size="mini">迷你按钮</zr-button>
     </demo-block>
-  </demo-section>
-
+  </view>
 </template>
 
 <script>
-  import demoBlock from '@/components/demo-block/Index.vue'
-  import zrButton from '@/components/button/Index.vue'
+  import demoBlock from '@/components/demo-block/Index'
+  import zrButton from '@/dist/button/Index'
   
   export default {
     components: {

@@ -6,8 +6,6 @@
 
 ## 安装
 
-待更新
-
 <!-- ### 方式一. 通过 npm 安装 (推荐)
 
 uni-app 支持使用 npm 安装第三方包
@@ -20,12 +18,14 @@ npm i zinaer-ui -S --production
 yarn add zinaer-ui --production
 ```
 
-### 方式二. 下载代码
+### 方式二. 下载代码 -->
+### 下载代码
 
 直接通过 git 下载 Zinaer UI 源代码，并将`dist`目录拷贝到自己的项目中
+
 ```bash
 git clone https://github.com/zinaer/zinaer-ui.git
-``` -->
+```
 
 ## 使用
 

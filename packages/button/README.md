@@ -59,8 +59,8 @@ export default {
 ### 加载状态
 
 ```html
-<zr-button loading type="primary" />
-<zr-button loading type="danger" loading-text="加载中..." />
+<zr-button loading type="primary"></zr-button>
+<zr-button loading type="danger" loading-text="加载中..."></zr-button>
 ```
 
 ### 按钮形状
