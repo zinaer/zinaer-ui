@@ -52,11 +52,6 @@
     components: {
       demoBlock,
       zrButton
-    },
-    methods: {
-      getUserInfo(e) {
-        console.log(e)
-      }
     }
   }
 </script>

@@ -712,6 +712,11 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
+"@vant/icons@^1.1.11":
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/@vant/icons/-/icons-1.1.11.tgz#4dfa9fbc2a693c958686ce7b6df2488368c60a17"
+  integrity sha512-s1LP5gNFaHlVPTbpR/x4GVQn1uRQF/NFucmQqvx/aB1G+BnuR0gx08Zhe9hzM5+4aCGF3Nucw9Qt7fn5TVCjWQ==
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.0.0.tgz#048fe579958da408fb7a8b2a3ec050b50a661040"

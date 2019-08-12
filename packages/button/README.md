@@ -8,7 +8,7 @@
 import zrButton from 'path/to/zinaer-ui/dist/button/Index'
 
 export default {
-  component: {
+  components: {
     zrButton
   }
 }

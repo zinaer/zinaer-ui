@@ -13,7 +13,7 @@
   >
     <block v-if="loading">
       <zr-loading
-        custom-class="loading-class"
+        class="loading-class"
         :size="loadingSize"
         :color="type === 'default' ? '#c9c9c9' : ''"      
       > 
@@ -46,14 +46,6 @@
         type: String,
         default: 'normal'
       },
-      customClass: String,
-      // plain: false,
-      // block: false,
-      // round: false,
-      // square: false,
-      // disabled: false,
-      // hairline: false,
-      // loading: false,
       plain: Boolean,
       block: Boolean,
       round: Boolean,

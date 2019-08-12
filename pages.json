@@ -1,9 +1,21 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    // {
+    //   "path": "pages/button/Index",
+    //   "style": {
+    //     "navigationBarTitleText": "Button 按钮"
+    //   }
+    // },
+    // {
+    //   "path": "pages/cell/Index",
+    //   "style": {
+    //     "navigationBarTitleText": "Cell 单元格"
+    //   }
+    // },
     {
-      "path": "pages/button/Index",
+      "path": "pages/icon/Index",
       "style": {
-        "navigationBarTitleText": "Button 按钮"
+        "navigationBarTitleText": "Icon 图标"
       }
     },
     {
